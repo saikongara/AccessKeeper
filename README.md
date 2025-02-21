@@ -32,7 +32,6 @@ To use this module, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone <repository-url>
-   cd azure-data-engineering-auth-module
    ```
 
 2. **Configure Variables**:
@@ -80,7 +79,7 @@ The module provides outputs that can be referenced in other modules or for exter
 
 ## Repository Owner
 
-This repository is maintained by [Sai Kongara](https://github.com/saikongara). For any queries or issues, please contact via [LinkedIn](www.linkedin.com/in/nagakongara).
+This repository is maintained by [Sai Kongara](https://github.com/saikongara). For any queries or issues, please contact via [LinkedIn](https://www.linkedin.com/in/nagakongara).
 
 ## Contribution
 
@@ -113,4 +112,4 @@ We welcome contributions to enhance this module. To contribute, follow these ste
 
 ## Conclusion
 
-This Terraform module simplifies the management of authentication for an Azure Data Engineering Platform, ensuring that the necessary permissions are correctly assigned to the appropriate Azure AD groups. For further details, refer to the individual module documentation within the `modules` directory.
+This Terraform module simplifies the management of authentication for an Azure Data Engineering Platform, ensuring that the necessary permissions are correctly assigned to the appropriate Azure AD groups. For further details, refer to the terraform documentation.
