@@ -31,7 +31,7 @@ To use this module, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/saikongara/AccessKeeper.git
    ```
 
 2. **Configure Variables**:
@@ -91,7 +91,6 @@ We welcome contributions to enhance this module. To contribute, follow these ste
 2. **Clone Your Fork**:
    ```bash
    git clone <your-fork-url>
-   cd azure-data-engineering-auth-module
    ```
 
 3. **Create a Branch**:
