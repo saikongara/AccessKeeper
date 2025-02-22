@@ -1,6 +1,6 @@
 # Azure Data Engineering Authentication Module
 
-This repository contains a reusable Terraform module designed to manage authentication for an Azure Data Engineering Platform. TThe resources included in this project are: 
+This repository contains a reusable Terraform module designed to manage authentication for an Azure Data Engineering Platform. The resources included in this project are:
 
 - Azure Data Lake
 - Azure Data Factory
@@ -9,22 +9,7 @@ This repository contains a reusable Terraform module designed to manage authenti
 - Azure Logic Apps
 - Azure Log Analytics
 - Azure Key Vault
-- Azure Cosmos DB. 
-
-## Purpose
-
-The primary purpose of this module is to streamline the authentication process for the specified Azure resources by leveraging Azure Active Directory (AAD) groups. This ensures that the right permissions are assigned to the appropriate groups, facilitating secure access to the data engineering platform.
-
-## Features
-
-- **Role-Based Access Control (RBAC)**: Assigns roles to predefined Azure AD groups for each Azure resource.
-- **Modular Design**: Each Azure resource has its own module, promoting reusability and maintainability.
-- **Configuration Management**: Supports variable files for easy configuration and customization.
-
-## Prerequisites
-
-- Terraform installed on your machine.
-- Azure account with appropriate permissions to create the resources defined in this project.
+- Azure Cosmos DB
 
 ## Project Structure
 
@@ -127,10 +112,6 @@ role_assignments = {
 ## Outputs
 
 The module provides outputs that can be referenced in other modules or for external use. Check the `outputs.tf` files in each module for available outputs.
-
-## Repository Owner
-
-This repository is maintained by [Sai Kongara](https://github.com/saikongara). For any queries or issues, please contact via [LinkedIn](https://www.linkedin.com/in/nagakongara).
 
 ## Contribution
 

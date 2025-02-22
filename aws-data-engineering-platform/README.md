@@ -12,10 +12,6 @@ This project is designed to manage authentication for a Data Engineering Platfor
 - AWS Step Functions
 - AWS Lambda
 
-## Purpose
-
-The primary purpose of this project is to streamline the authentication process for the specified AWS resources by leveraging AWS IAM roles and policies. This ensures that the right permissions are assigned to the appropriate roles, facilitating secure access to the data engineering platform.
-
 ## Project Structure
 
 The project is organized into modules, each responsible for a specific AWS resource. The structure is as follows:
@@ -38,12 +34,6 @@ aws-data-engineering-platform
 ├── outputs.tf
 └── README.md
 ```
-
-## Features
-
-- **Role-Based Access Control (RBAC)**: Assigns roles to predefined IAM roles for each AWS resource.
-- **Modular Design**: Each AWS resource has its own module, promoting reusability and maintainability.
-- **Configuration Management**: Supports variable files for easy configuration and customization.
 
 ## AWS IAM Roles and Policies
 
@@ -139,10 +129,6 @@ role_assignments = {
 ## Outputs
 
 The module provides outputs that can be referenced in other modules or for external use. Check the `outputs.tf` files in each module for available outputs.
-
-## Repository Owner
-
-This repository is maintained by [Sai Kongara](https://github.com/saikongara). For any queries or issues, please contact via [LinkedIn](https://www.linkedin.com/in/nagakongara).
 
 ## Contribution
 
