@@ -1,6 +1,15 @@
 # Azure Data Engineering Authentication Module
 
-This repository contains a reusable Terraform module designed to manage authentication for an Azure Data Engineering Platform. The module incorporates various Azure resources, including Azure Data Lake, Azure Data Factory, Azure Databricks, Azure Service Bus, Azure Logic Apps, Azure Log Analytics, Azure Key Vault, and Azure Cosmos DB. 
+This repository contains a reusable Terraform module designed to manage authentication for an Azure Data Engineering Platform. TThe resources included in this project are: 
+
+- Azure Data Lake
+- Azure Data Factory
+- Azure Databricks
+- Azure Service Bus
+- Azure Logic Apps
+- Azure Log Analytics
+- Azure Key Vault
+- Azure Cosmos DB. 
 
 ## Purpose
 
@@ -11,6 +20,41 @@ The primary purpose of this module is to streamline the authentication process f
 - **Role-Based Access Control (RBAC)**: Assigns roles to predefined Azure AD groups for each Azure resource.
 - **Modular Design**: Each Azure resource has its own module, promoting reusability and maintainability.
 - **Configuration Management**: Supports variable files for easy configuration and customization.
+
+## Prerequisites
+
+- Terraform installed on your machine.
+- Azure account with appropriate permissions to create the resources defined in this project.
+
+## Project Structure
+
+The project is organized into modules, each responsible for a specific Azure resource. The structure is as follows:
+
+```
+azure-data-engineering-platform
+├── modules
+│   ├── data_lake
+│   ├── data_factory
+│   ├── databricks
+│   ├── service_bus
+│   ├── logic_apps
+│   ├── log_analytics
+│   ├── key_vault
+│   └── cosmos_db
+├── main.tf
+├── variables.tf
+├── terraform.tfvars
+├── outputs.tf
+└── README.md
+```
+
+## Modules
+
+Each module contains the following files:
+
+- **main.tf**: Contains the Terraform code to create and manage the respective Azure resource.
+- **variables.tf**: Defines the input variables for the module, including dummy values and descriptions.
+- **outputs.tf**: Specifies the outputs of the module, allowing other modules to reference the created resources.
 
 ## Azure AD Groups and Role Assignments
 
@@ -32,6 +76,7 @@ To use this module, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/saikongara/AccessKeeper.git
+   cd azure-data-engineering-platform
    ```
 
 2. **Configure Variables**:
@@ -53,6 +98,12 @@ To use this module, follow these steps:
    Deploy the resources by applying the configuration:
    ```bash
    terraform apply
+   ```
+
+6. **Destroy the Resources** (if needed):
+   To remove all resources created by this project, run:
+   ```bash
+   terraform destroy
    ```
 
 ## Example Configuration
@@ -91,6 +142,7 @@ We welcome contributions to enhance this module. To contribute, follow these ste
 2. **Clone Your Fork**:
    ```bash
    git clone <your-fork-url>
+   cd azure-data-engineering-platform
    ```
 
 3. **Create a Branch**:
